@@ -1,0 +1,15 @@
+{
+  "name": "web-utils",
+  "version": "1.0.0",
+  "description": "Utilities for simplifying your javascript code in the web.",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "./node_modules/.bin/tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ben Heidemann",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}
