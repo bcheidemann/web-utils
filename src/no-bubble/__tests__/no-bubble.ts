@@ -3,7 +3,6 @@ import { NoBubble } from "..";
 describe('NoBubble', () => {
     describe('wrapper', () => {
         it('calling the wrapped function should cancel the event', () => {
-            throw new Error('TEST FAIL IN CI');
             // Arrange
             const event: Partial<Event> = {
                 cancelable: true,
