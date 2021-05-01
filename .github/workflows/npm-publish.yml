@@ -11,6 +11,6 @@ jobs:
       - name: npm install
         run: npm install
       - name: test
-        run: npm coverage
+        run: npm run coverage
       - name: release
         run: npx gulp release
