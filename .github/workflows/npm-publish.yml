@@ -8,5 +8,7 @@ jobs:
         uses: actions/checkout@v2
       - name: cd
         run: cd ${{ github.workspace }}
+      - name: npm install
+        run: npm install
       - name: release
         run: npx gulp release
