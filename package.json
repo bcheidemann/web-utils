@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "tsc": "./node_modules/.bin/tsc",
-    "test": "jest"
+    "test": "jest",
+    "coverage": "jest --coverage"
   },
   "author": "Ben Heidemann",
   "license": "ISC",
