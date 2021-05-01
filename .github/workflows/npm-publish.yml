@@ -10,5 +10,7 @@ jobs:
         run: cd ${{ github.workspace }}
       - name: npm install
         run: npm install
+      - name: test
+        run: npm coverage
       - name: release
         run: npx gulp release
