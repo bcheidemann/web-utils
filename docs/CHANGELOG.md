@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/bcheidemann/web-utils/compare/v1.2.2...v1.2.3) (2021-05-02)
+
+
+### Bug Fixes
+
+* automatically update docs after npm release ([28c0183](https://github.com/bcheidemann/web-utils/commit/28c01834055de1dea99c1b5e5bcffc17e8bdd1ff))
+
 ## [1.2.2](https://github.com/bcheidemann/web-utils/compare/v1.2.1...v1.2.2) (2021-05-02)
 
 
