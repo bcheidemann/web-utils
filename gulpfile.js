@@ -1,4 +1,3 @@
-const { series } = require('gulp');
-const releaseScripts = require('./scripts/release');
+const build = require('./scripts/build');
 
-module.exports.release = series(releaseScripts.main);
+module.exports.build = build;
