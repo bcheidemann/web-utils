@@ -14,6 +14,6 @@ jobs:
       - run: npx gulp build
       - name: Coverage Report
         uses: artiomtr/jest-coverage-report-action@v1.2
-          with:
-              github_token: ${{ secrets.GITHUB_TOKEN }}
-              threshold: 100
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          threshold: 100
