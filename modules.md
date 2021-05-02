@@ -35,7 +35,7 @@
 
 **Returns:** *void*
 
-Defined in: [src/types.ts:1](https://github.com/bcheidemann/web-utils/blob/fa949c7/src/types.ts#L1)
+Defined in: [src/types.ts:1](https://github.com/bcheidemann/web-utils/blob/a5e0297/src/types.ts#L1)
 
 ## Functions
 
@@ -49,7 +49,9 @@ cancellable, bubbling will be cancelled before executing the handler method.
 **`example`** 
 ```typescript
 // Wrapper
-const handler = NoBubble(event => { /* implementation *\/ });
+const handler = NoBubble(event => {
+    // implementation
+});
 
 // React
 const mySpan = (<span onPress={handler}>{'Press Me!'}</span>);
@@ -65,7 +67,7 @@ const mySpan = (<span onPress={handler}>{'Press Me!'}</span>);
 
 **Returns:** PropertyDescriptor
 
-Defined in: [src/no-bubble/index.ts:22](https://github.com/bcheidemann/web-utils/blob/fa949c7/src/no-bubble/index.ts#L22)
+Defined in: [src/no-bubble/index.ts:24](https://github.com/bcheidemann/web-utils/blob/a5e0297/src/no-bubble/index.ts#L24)
 
 ▸ **NoBubble**(`handler?`: [*EventHandler*](modules.md#eventhandler)): [*EventHandler*](modules.md#eventhandler)
 
@@ -78,7 +80,7 @@ cancellable, bubbling will be cancelled before executing the handler function.
 class MyComponent extends React.Component {
     @NoBubble
     public onPress(event: Event) {
-        /* implementation *\/
+        // implementation
     }
 
     public render() {
@@ -95,7 +97,7 @@ class MyComponent extends React.Component {
 
 **Returns:** [*EventHandler*](modules.md#eventhandler)
 
-Defined in: [src/no-bubble/index.ts:46](https://github.com/bcheidemann/web-utils/blob/fa949c7/src/no-bubble/index.ts#L46)
+Defined in: [src/no-bubble/index.ts:48](https://github.com/bcheidemann/web-utils/blob/a5e0297/src/no-bubble/index.ts#L48)
 
 ___
 
@@ -122,4 +124,4 @@ This function accepts an event and attempts to cancel it.
 
 **Returns:** *void*
 
-Defined in: [src/cancel-event/index.ts:26](https://github.com/bcheidemann/web-utils/blob/fa949c7/src/cancel-event/index.ts#L26)
+Defined in: [src/cancel-event/index.ts:26](https://github.com/bcheidemann/web-utils/blob/a5e0297/src/cancel-event/index.ts#L26)

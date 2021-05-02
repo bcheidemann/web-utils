@@ -12,7 +12,9 @@ import { wrapEventHandler } from "./wrapper";
  * @example
  * ```typescript
  * // Wrapper
- * const handler = NoBubble(event => { /* implementation *\/ });
+ * const handler = NoBubble(event => {
+ *     // implementation
+ * });
  * 
  * // React
  * const mySpan = (<span onPress={handler}>{'Press Me!'}</span>);
@@ -33,7 +35,7 @@ export function NoBubble(target: any, propertyKey: PropertyKey, descriptor: Even
  * class MyComponent extends React.Component {
  *     @NoBubble
  *     public onPress(event: Event) {
- *         /* implementation *\/
+ *         // implementation
  *     }
  * 
  *     public render() {
