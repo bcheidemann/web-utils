@@ -3,8 +3,10 @@ function isEventCancellable(event: Event) {
 }
 
 function cancelEventInternal(event: Event) {
-    event.cancelBubble = true;
-    event.preventDefault();
+    if (isEventCancellable(event)) {
+        event.cancelBubble = true;
+        event.preventDefault();
+    }
 }
 
 /**
@@ -13,11 +15,5 @@ function cancelEventInternal(event: Event) {
  * @returns {boolean} true if the event was cancelled or false if it couldn't be cancelled
  */
  export function cancelEvent(event: Event) {
-    if (isEventCancellable(event)) {
-        cancelEventInternal(event);
-        return true;
-    }
-    else {
-        return false;
-    }
+    cancelEventInternal(event);
 }
