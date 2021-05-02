@@ -35,7 +35,7 @@
 
 **Returns:** *void*
 
-Defined in: [src/types.ts:1](https://github.com/bcheidemann/web-utils/blob/2e6ada2/src/types.ts#L1)
+Defined in: [src/types.ts:1](https://github.com/bcheidemann/web-utils/blob/452d149/src/types.ts#L1)
 
 ## Functions
 
@@ -67,7 +67,7 @@ const mySpan = (<span onPress={handler}>{'Press Me!'}</span>);
 
 **Returns:** PropertyDescriptor
 
-Defined in: [src/no-bubble/index.ts:24](https://github.com/bcheidemann/web-utils/blob/2e6ada2/src/no-bubble/index.ts#L24)
+Defined in: [src/no-bubble/index.ts:24](https://github.com/bcheidemann/web-utils/blob/452d149/src/no-bubble/index.ts#L24)
 
 ▸ **NoBubble**(`handler?`: [*EventHandler*](modules.md#eventhandler)): [*EventHandler*](modules.md#eventhandler)
 
@@ -97,7 +97,7 @@ class MyComponent extends React.Component {
 
 **Returns:** [*EventHandler*](modules.md#eventhandler)
 
-Defined in: [src/no-bubble/index.ts:48](https://github.com/bcheidemann/web-utils/blob/2e6ada2/src/no-bubble/index.ts#L48)
+Defined in: [src/no-bubble/index.ts:48](https://github.com/bcheidemann/web-utils/blob/452d149/src/no-bubble/index.ts#L48)
 
 ___
 
@@ -108,6 +108,7 @@ ___
 This function accepts an event and attempts to cancel it.
 
 **`example`** 
+
 ```typescript
 <div
     onPress={(event: Event) => {
@@ -124,4 +125,4 @@ This function accepts an event and attempts to cancel it.
 
 **Returns:** *void*
 
-Defined in: [src/cancel-event/index.ts:26](https://github.com/bcheidemann/web-utils/blob/2e6ada2/src/cancel-event/index.ts#L26)
+Defined in: [src/cancel-event/index.ts:27](https://github.com/bcheidemann/web-utils/blob/452d149/src/cancel-event/index.ts#L27)

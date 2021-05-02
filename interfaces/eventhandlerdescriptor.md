@@ -50,7 +50,7 @@ ___
 
 Overrides: PropertyDescriptor.value
 
-Defined in: [src/types.ts:3](https://github.com/bcheidemann/web-utils/blob/2e6ada2/src/types.ts#L3)
+Defined in: [src/types.ts:3](https://github.com/bcheidemann/web-utils/blob/452d149/src/types.ts#L3)
 
 ___
 
