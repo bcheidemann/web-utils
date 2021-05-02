@@ -29,7 +29,7 @@ class MyComponent extends React.Component {
     }
 
     public render() {
-        return (<span onPress={handler}>{'Press Me!'}</span>);
+        return (<span onPress={this.onPress}>{'Press Me!'}</span>);
     }
 }
 ```
