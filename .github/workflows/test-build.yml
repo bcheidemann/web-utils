@@ -13,3 +13,10 @@ jobs:
       - run: npm ci
       - run: npm run coverage
       - run: npx gulp build
+      - name: Test Report
+        uses: dorny/test-reporter@v1
+        if: success() || failure()
+        with:
+          name: Coverage Report
+          path: coverage/coverage-final.json
+          reporter: jest-junit
