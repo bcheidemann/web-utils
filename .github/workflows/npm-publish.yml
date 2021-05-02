@@ -1,16 +1,23 @@
 name: NPM Publish
 on: [push]
+  # push:
+  #   branches:
+  #     - master
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: cd
-        run: cd ${{ github.workspace }}
-      - name: npm install
-        run: npm install
-      - name: test
-        run: npm run coverage
+      - run: cd ${{ github.workspace }}
+      - run: npm ci
+      - run: npm run coverage
+      - run: npx gulp build
+      - run: ln -s node_modules dist/node_modules
       - name: release
-        run: npx gulp release
+        run: |
+          cd dist
+          npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
