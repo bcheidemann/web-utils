@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Utilities for simplifying your javascript code in the web.",
   "repository": "https://github.com/bcheidemann/web-utils",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "tsc": "./node_modules/.bin/tsc",
     "test": "jest",

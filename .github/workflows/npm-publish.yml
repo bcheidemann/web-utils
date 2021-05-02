@@ -15,10 +15,8 @@ jobs:
       - run: npx gulp build
       - name: release
         run: |
-          cd dist
           npx semantic-release
           cat package.json
-          cd ..
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
