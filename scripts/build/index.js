@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const { exec } = require('child_process');
 
-const clean = function (cb) {
+const clean = function () {
     return exec('rm -rf dist');
 }
 
