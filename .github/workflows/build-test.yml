@@ -1,20 +1,19 @@
-name: Test and Build
+name: Build and Test
 on:
   push:
     branches-ignore:
       - "master"
 jobs:
-  test-build:
+  build-test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
       - run: cd ${{ github.workspace }}
       - run: npm ci
-      - run: npm run coverage
       - run: npx gulp build
       - name: Coverage Report
-        uses: romeovs/lcov-reporter-action@v0.2.16
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          lcov-file: ./coverage/lcov.info
+        uses: artiomtr/jest-coverage-report-action@v1.2
+          with:
+              github_token: ${{ secrets.GITHUB_TOKEN }}
+              threshold: 100
