@@ -4,7 +4,7 @@ on:
     branches-ignore:
       - 'master'
 jobs:
-  test:
+  test-build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
