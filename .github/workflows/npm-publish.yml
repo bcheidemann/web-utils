@@ -22,6 +22,6 @@ jobs:
       - name: Increment version number
         uses: EndBug/add-and-commit@v7
         with:
-          add: ['package.json', 'docs/CHANGELOG.md']
+          add: '.'
           message: '[SEMANTIC RELEASE]'
           push: true
