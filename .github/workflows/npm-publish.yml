@@ -16,13 +16,14 @@ jobs:
       - name: release
         run: |
           npx semantic-release
-          git stauts
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Increment version number
         uses: EndBug/add-and-commit@v7
         with:
-          add: 'package.json'
+          add:
+            - 'package.json'
+            - 'docs/CHANGELOG.md'
           message: '[SEMANTIC RELEASE]'
           push: true
