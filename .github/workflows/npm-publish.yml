@@ -13,7 +13,6 @@ jobs:
       - run: npm ci
       - run: npm run coverage
       - run: npx gulp build
-      - run: ln -s node_modules dist/node_modules
       - name: release
         run: |
           cd dist
