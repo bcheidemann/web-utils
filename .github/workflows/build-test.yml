@@ -1,0 +1,24 @@
+name: Build and Test
+on: [pull_request]
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - run: cd ${{ github.workspace }}
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npx gulp build
+      - name: Coverage Report
+        uses: artiomtr/jest-coverage-report-action@v1.2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          threshold: 100
+          test_script: npm run coverage -- --ci
