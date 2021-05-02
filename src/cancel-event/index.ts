@@ -9,5 +9,6 @@
         event.preventDefault();
         return true;
     }
+    throw new Error('WHY IS THIS HAPPENING???');
     return false;
 }
