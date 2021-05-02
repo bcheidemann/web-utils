@@ -25,7 +25,7 @@
 
 **Returns:** PropertyDescriptor
 
-Defined in: [no-bubble/index.ts:8](https://github.com/bcheidemann/web-utils/blob/2e21796/src/no-bubble/index.ts#L8)
+Defined in: [no-bubble/index.ts:8](https://github.com/bcheidemann/web-utils/blob/4fa4d6b/src/no-bubble/index.ts#L8)
 
 ▸ **NoBubble**(`handler?`: EventHandler): EventHandler
 
@@ -37,7 +37,7 @@ Defined in: [no-bubble/index.ts:8](https://github.com/bcheidemann/web-utils/blob
 
 **Returns:** EventHandler
 
-Defined in: [no-bubble/index.ts:9](https://github.com/bcheidemann/web-utils/blob/2e21796/src/no-bubble/index.ts#L9)
+Defined in: [no-bubble/index.ts:9](https://github.com/bcheidemann/web-utils/blob/4fa4d6b/src/no-bubble/index.ts#L9)
 
 ___
 
@@ -47,6 +47,16 @@ ___
 
 This function accepts an event and attempts to cancel it.
 
+**`example`** 
+### Usage
+```typescript
+<div
+    onPress={(event: Event) => {
+        cancelEvent(event);
+    }}
+/>
+```
+
 #### Parameters:
 
 | Name | Type | Description |
@@ -55,6 +65,4 @@ This function accepts an event and attempts to cancel it.
 
 **Returns:** *void*
 
-true if the event was cancelled or false if it couldn't be cancelled
-
-Defined in: [cancel-event/index.ts:17](https://github.com/bcheidemann/web-utils/blob/2e21796/src/cancel-event/index.ts#L17)
+Defined in: [cancel-event/index.ts:27](https://github.com/bcheidemann/web-utils/blob/4fa4d6b/src/cancel-event/index.ts#L27)

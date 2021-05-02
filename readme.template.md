@@ -1,5 +1,3 @@
-# WebUtils - v1.1.0 / [Exports](modules.md)
-
 Utilities for simplifying your javascript code in the web.
 
 # Docs
