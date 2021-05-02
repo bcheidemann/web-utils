@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/bcheidemann/web-utils/compare/v1.2.3...v1.2.4) (2021-05-02)
+
+
+### Bug Fixes
+
+* test release ([4254982](https://github.com/bcheidemann/web-utils/commit/4254982e858a2a444b9a74a75bb87b6eb1ceb7e7))
+
 ## [1.2.3](https://github.com/bcheidemann/web-utils/compare/v1.2.2...v1.2.3) (2021-05-02)
 
 
