@@ -14,6 +14,7 @@ function cancelEventInternal(event: Event) {
  * @param event The event to be cancelled
  * 
  * @example
+ * 
  * ```typescript
  * <div
  *     onPress={(event: Event) => {
