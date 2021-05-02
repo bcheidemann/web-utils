@@ -11,8 +11,17 @@ function cancelEventInternal(event: Event) {
 
 /**
  * This function accepts an event and attempts to cancel it.
- * @param event {Event} - The event to be cancelled
- * @returns {boolean} true if the event was cancelled or false if it couldn't be cancelled
+ * @param event The event to be cancelled
+ * 
+ * @example
+ * ```typescript
+ * <div
+ *     onPress={(event: Event) => {
+ *         cancelEvent(event);
+ *     }}
+ * />
+ * ```
+ * 
  */
  export function cancelEvent(event: Event) {
     cancelEventInternal(event);

@@ -1,11 +1,50 @@
-import { EventHandler } from "../types";
+import { EventHandler, EventHandlerDescriptor } from "../types";
 import { wrapEventHandler } from "./wrapper";
 
-interface EventHandlerDescriptor extends PropertyDescriptor {
-    value?: EventHandler;
-}
-
+/**
+ * Method decorator for event handlers. When calling the decorated method, if the event is
+ * cancellable, bubbling will be cancelled before executing the handler method.
+ * 
+ * @param target 
+ * @param propertyKey 
+ * @param descriptor 
+ * 
+ * @example
+ * ```typescript
+ * // Wrapper
+ * const handler = NoBubble(event => {
+ *     // implementation
+ * });
+ * 
+ * // React
+ * const mySpan = (<span onPress={handler}>{'Press Me!'}</span>);
+ * ```
+ * 
+ */
 export function NoBubble(target: any, propertyKey: PropertyKey, descriptor: EventHandlerDescriptor): PropertyDescriptor;
+
+/**
+ * Function wrapper for event handlers. When calling the wrapped function, if the event is
+ * cancellable, bubbling will be cancelled before executing the handler function.
+ * 
+ * @param handler event handler
+ * 
+ * @example
+ * ```typescript
+ * // React Class Component
+ * class MyComponent extends React.Component {
+ *     @NoBubble
+ *     public onPress(event: Event) {
+ *         // implementation
+ *     }
+ * 
+ *     public render() {
+ *         return (<span onPress={this.onPress}>{'Press Me!'}</span>);
+ *     }
+ * }
+ * ```
+ * 
+ */
 export function NoBubble(handler?: EventHandler): EventHandler;
 
 export function NoBubble(targetOrHandler: any, propertyKey?: PropertyKey, descriptor?: EventHandlerDescriptor) {

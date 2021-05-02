@@ -9,7 +9,9 @@
     "test": "jest",
     "build": "gulp build",
     "coverage": "jest --coverage --coverageReporters=\"text\" --coverageReporters=\"text-summary\"",
-    "serve-coverage": "live-server ./coverage/lcov-report"
+    "serve-coverage": "live-server ./coverage/lcov-report",
+    "docs": "typedoc --options typedoc.json && cp -a docs/.typedoc/. .",
+    "rmdocs": "exitzero rm README.md && exitzero rm modules.md && exitzero rm -rf interfaces"
   },
   "author": "Ben Heidemann",
   "license": "ISC",
@@ -21,6 +23,7 @@
     "@semantic-release/git": "^9.0.0",
     "@types/gulp": "^4.0.8",
     "@types/jest": "^26.0.23",
+    "exitzero": "^1.0.1",
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-cli": "^2.3.0",
@@ -28,6 +31,8 @@
     "live-server": "^1.2.1",
     "semantic-release": "^17.4.2",
     "ts-jest": "^26.5.5",
+    "typedoc": "^0.20.36",
+    "typedoc-plugin-markdown": "^3.7.2",
     "typescript": "^4.2.4"
   },
   "dependencies": {}

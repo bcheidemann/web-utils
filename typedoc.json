@@ -1,0 +1,9 @@
+{
+  "name": "# WebUtils",
+  "entryPoints": ["src/index.ts"],
+  "out": "docs/.typedoc",
+  "tsconfig": "tsconfig.build.json",
+  "excludePrivate": true,
+  "includeVersion": true,
+  "readme": "readme.template.md"
+}

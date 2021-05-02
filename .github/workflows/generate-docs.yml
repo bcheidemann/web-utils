@@ -1,4 +1,4 @@
-name: Build and Test
+name: Generate Docs
 on: [pull_request]
 jobs:
   build-test:
@@ -15,10 +15,11 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
-      - run: npm run build
-      - name: Coverage Report
-        uses: artiomtr/jest-coverage-report-action@v1.2
+      - run: npm run rmdocs
+      - run: npm run docs
+      - name: Update Docs
+        uses: EndBug/add-and-commit@v7
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          threshold: 100
-          test_script: npm run coverage -- --ci
+          add: '.'
+          message: '[TYPEDOC]'
+          push: true
