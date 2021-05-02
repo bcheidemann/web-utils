@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/bcheidemann/web-utils/compare/v1.2.1...v1.2.2) (2021-05-02)
+
+
+### Bug Fixes
+
+* add README.md ([a5654b2](https://github.com/bcheidemann/web-utils/commit/a5654b20bebd0f9e8c601c048e7bfb9ca4e04f43))
+
 ## [1.2.1](https://github.com/bcheidemann/web-utils/compare/v1.2.0...v1.2.1) (2021-05-02)
 
 
