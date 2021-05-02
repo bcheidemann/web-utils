@@ -12,7 +12,7 @@ jobs:
       - run: cd ${{ github.workspace }}
       - run: npm ci
       - run: npm run coverage
-      - run: npx gulp build
+      - run: npm run build
       - name: release
         run: npx semantic-release
         env:
