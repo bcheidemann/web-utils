@@ -9,7 +9,8 @@
     "test": "jest",
     "build": "gulp build",
     "coverage": "jest --coverage --coverageReporters=\"text\" --coverageReporters=\"text-summary\"",
-    "serve-coverage": "live-server ./coverage/lcov-report"
+    "serve-coverage": "live-server ./coverage/lcov-report",
+    "docs": "typedoc --options typedoc.json && cp -a docs/.typedoc/. ."
   },
   "author": "Ben Heidemann",
   "license": "ISC",
