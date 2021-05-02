@@ -1,0 +1,25 @@
+name: Generate Docs
+on: [pull_request]
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - run: cd ${{ github.workspace }}
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm run rmdocs
+      - run: npm run docs
+      - name: Update Docs
+        uses: EndBug/add-and-commit@v7
+        with:
+          add: '.'
+          message: '[TYPEDOC]'
+          push: true
