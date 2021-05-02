@@ -1,6 +1,6 @@
 {
   "name": "@bcheidemann/web-utils",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Utilities for simplifying your javascript code in the web.",
   "repository": "https://github.com/bcheidemann/web-utils",
   "main": "dist/index.js",
