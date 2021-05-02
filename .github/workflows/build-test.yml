@@ -21,4 +21,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           threshold: 100
-          test_script: npm run coverage -- --coverageReporters="text" --coverageReporters="text-summary" --ci --no-cache --runInBand
+          test_script: npm run coverage -- --ci

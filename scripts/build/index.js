@@ -6,7 +6,7 @@ const clean = function () {
 }
 
 const tsc = function () {
-    return exec('tsc -d');
+    return exec('tsc -d -p tsconfig.build.json');
 }
 
 const copyPackageJson = function () {
