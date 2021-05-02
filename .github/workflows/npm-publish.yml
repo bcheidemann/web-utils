@@ -14,9 +14,7 @@ jobs:
       - run: npm run coverage
       - run: npx gulp build
       - name: release
-        run: |
-          npx semantic-release
-          cat package.json
+        run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
