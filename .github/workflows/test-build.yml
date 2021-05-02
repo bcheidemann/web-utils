@@ -1,8 +1,8 @@
 name: Test and Build
 on:
   push:
-    branches:
-      not: [master]
+    branches-ignore:
+      - 'master'
 jobs:
   test:
     runs-on: ubuntu-latest
