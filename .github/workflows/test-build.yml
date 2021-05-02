@@ -2,7 +2,7 @@ name: Test and Build
 on:
   push:
     branches-ignore:
-      - 'master'
+      - "master"
 jobs:
   test-build:
     runs-on: ubuntu-latest
@@ -13,10 +13,8 @@ jobs:
       - run: npm ci
       - run: npm run coverage
       - run: npx gulp build
-      - name: Test Report
-        uses: dorny/test-reporter@v1
-        if: success() || failure()
+      - name: Coverage Report
+        uses: romeovs/lcov-reporter-action@v0.2.16
         with:
-          name: Coverage Report
-          path: coverage/coverage-final.json
-          reporter: jest-junit
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          lcov-file: ./coverage/lcov.info
