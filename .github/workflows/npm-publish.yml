@@ -1,5 +1,5 @@
 name: NPM Publish
-on: [push]
+on:
   push:
     branches:
       - master
