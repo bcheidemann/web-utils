@@ -14,7 +14,9 @@ jobs:
       - run: npm run coverage
       - run: npm run build
       - name: release
-        run: npx semantic-release
+        run: |
+          npx semantic-release
+          git stauts
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
