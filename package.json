@@ -8,7 +8,7 @@
     "tsc": "./node_modules/.bin/tsc",
     "test": "jest",
     "build": "gulp build",
-    "coverage": "jest --coverage",
+    "coverage": "jest --coverage --coverageReporters=\"text\" --coverageReporters=\"text-summary\"",
     "serve-coverage": "live-server ./coverage/lcov-report"
   },
   "author": "Ben Heidemann",
