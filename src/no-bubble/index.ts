@@ -1,9 +1,5 @@
-import { EventHandler } from "../types";
+import { EventHandler, EventHandlerDescriptor } from "../types";
 import { wrapEventHandler } from "./wrapper";
-
-export interface EventHandlerDescriptor extends PropertyDescriptor {
-    value?: EventHandler;
-}
 
 /**
  * Method decorator for event handlers. When calling the decorated method, if the event is

@@ -8,10 +8,34 @@
 
 - [EventHandlerDescriptor](interfaces/eventhandlerdescriptor.md)
 
+### Type aliases
+
+- [EventHandler](modules.md#eventhandler)
+
 ### Functions
 
 - [NoBubble](modules.md#nobubble)
 - [cancelEvent](modules.md#cancelevent)
+
+## Type aliases
+
+### EventHandler
+
+Ƭ **EventHandler**: (`event`: Event) => *void*
+
+#### Type declaration:
+
+▸ (`event`: Event): *void*
+
+#### Parameters:
+
+| Name | Type |
+| :------ | :------ |
+| `event` | Event |
+
+**Returns:** *void*
+
+Defined in: [src/types.ts:1](https://github.com/bcheidemann/web-utils/blob/fa949c7/src/types.ts#L1)
 
 ## Functions
 
@@ -41,9 +65,9 @@ const mySpan = (<span onPress={handler}>{'Press Me!'}</span>);
 
 **Returns:** PropertyDescriptor
 
-Defined in: [src/no-bubble/index.ts:26](https://github.com/bcheidemann/web-utils/blob/910943c/src/no-bubble/index.ts#L26)
+Defined in: [src/no-bubble/index.ts:22](https://github.com/bcheidemann/web-utils/blob/fa949c7/src/no-bubble/index.ts#L22)
 
-▸ **NoBubble**(`handler?`: EventHandler): EventHandler
+▸ **NoBubble**(`handler?`: [*EventHandler*](modules.md#eventhandler)): [*EventHandler*](modules.md#eventhandler)
 
 Function wrapper for event handlers. When calling the wrapped function, if the event is
 cancellable, bubbling will be cancelled before executing the handler function.
@@ -67,11 +91,11 @@ class MyComponent extends React.Component {
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `handler?` | EventHandler | event handler |
+| `handler?` | [*EventHandler*](modules.md#eventhandler) | event handler |
 
-**Returns:** EventHandler
+**Returns:** [*EventHandler*](modules.md#eventhandler)
 
-Defined in: [src/no-bubble/index.ts:50](https://github.com/bcheidemann/web-utils/blob/910943c/src/no-bubble/index.ts#L50)
+Defined in: [src/no-bubble/index.ts:46](https://github.com/bcheidemann/web-utils/blob/fa949c7/src/no-bubble/index.ts#L46)
 
 ___
 
@@ -98,4 +122,4 @@ This function accepts an event and attempts to cancel it.
 
 **Returns:** *void*
 
-Defined in: [src/cancel-event/index.ts:26](https://github.com/bcheidemann/web-utils/blob/910943c/src/cancel-event/index.ts#L26)
+Defined in: [src/cancel-event/index.ts:26](https://github.com/bcheidemann/web-utils/blob/fa949c7/src/cancel-event/index.ts#L26)

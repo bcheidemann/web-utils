@@ -46,11 +46,11 @@ ___
 
 ### value
 
-• `Optional` **value**: EventHandler
+• `Optional` **value**: [*EventHandler*](../modules.md#eventhandler)
 
 Overrides: PropertyDescriptor.value
 
-Defined in: [src/no-bubble/index.ts:5](https://github.com/bcheidemann/web-utils/blob/910943c/src/no-bubble/index.ts#L5)
+Defined in: [src/types.ts:3](https://github.com/bcheidemann/web-utils/blob/fa949c7/src/types.ts#L3)
 
 ___
 
