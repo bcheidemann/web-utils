@@ -26,5 +26,4 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
       - name: Increment version number
-        run: npm add .
-        run: npm push
+        run: git add . && git push
