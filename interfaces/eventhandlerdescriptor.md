@@ -1,4 +1,4 @@
-[# WebUtils - v1.1.0](../README.md) / [Exports](../modules.md) / EventHandlerDescriptor
+[# WebUtils - v1.3.2](../README.md) / [Exports](../modules.md) / EventHandlerDescriptor
 
 # Interface: EventHandlerDescriptor
 
@@ -50,7 +50,7 @@ ___
 
 Overrides: PropertyDescriptor.value
 
-Defined in: [src/types.ts:3](https://github.com/bcheidemann/web-utils/blob/452d149/src/types.ts#L3)
+Defined in: [src/types.ts:3](https://github.com/bcheidemann/web-utils/blob/328c0c3/src/types.ts#L3)
 
 ___
 
