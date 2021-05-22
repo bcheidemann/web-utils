@@ -1,3 +1,11 @@
+## [1.2.7](https://github.com/bcheidemann/web-utils/compare/v1.2.6...v1.2.7) (2021-05-22)
+
+
+### Bug Fixes
+
+* adfgdsf ([3108175](https://github.com/bcheidemann/web-utils/commit/3108175470cb83eba8b5aeb5cfcfa7460f15c650))
+* test ([0f152e2](https://github.com/bcheidemann/web-utils/commit/0f152e2dbdc27b83d269a0627228269ea2314c86))
+
 ## [1.2.6](https://github.com/bcheidemann/web-utils/compare/v1.2.5...v1.2.6) (2021-05-22)
 
 
