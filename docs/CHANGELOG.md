@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/bcheidemann/web-utils/compare/v1.2.7...v1.3.0) (2021-05-22)
+
+
+### Bug Fixes
+
+* npm install ([a451884](https://github.com/bcheidemann/web-utils/commit/a451884993bb7588f4493285be4bbac9e9e83abe))
+
+
+### Features
+
+* semantic release setup ([a1886b9](https://github.com/bcheidemann/web-utils/commit/a1886b9f0afeb1c60c062096ac96ec461653c402))
+
 ## [1.2.7](https://github.com/bcheidemann/web-utils/compare/v1.2.6...v1.2.7) (2021-05-22)
 
 
