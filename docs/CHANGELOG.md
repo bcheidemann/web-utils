@@ -1,3 +1,11 @@
+## [1.2.6](https://github.com/bcheidemann/web-utils/compare/v1.2.5...v1.2.6) (2021-05-22)
+
+
+### Bug Fixes
+
+* commit new version number ([4c14d67](https://github.com/bcheidemann/web-utils/commit/4c14d670bc238b2dc0f2c4536fe3d67687328130))
+* commit new version number ([f2ff793](https://github.com/bcheidemann/web-utils/commit/f2ff7934e93c67ab57c653f3aca02bfe54b6d6e3))
+
 ## [1.2.5](https://github.com/bcheidemann/web-utils/compare/v1.2.4...v1.2.5) (2021-05-22)
 
 
