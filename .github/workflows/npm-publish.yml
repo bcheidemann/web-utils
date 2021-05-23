@@ -32,8 +32,7 @@ jobs:
           message: '[SEMANTIC RELEASE]'
           push: true
       - name: Generate Documentation
-        run: npm run rmdocs
-        run: npm run docs
+        run: npm run rmdocs && npm run docs
       - name: Push
         uses: EndBug/add-and-commit@v7
         with:
