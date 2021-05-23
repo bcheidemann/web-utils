@@ -1,4 +1,4 @@
-# WebUtils - v1.3.2 / [Exports](modules.md)
+# WebUtils - v1.3.3 / [Exports](modules.md)
 
 Utilities for simplifying your javascript code in the web.
 
