@@ -1,3 +1,12 @@
+## [1.3.3](https://github.com/bcheidemann/web-utils/compare/v1.3.2...v1.3.3) (2021-05-23)
+
+
+### Bug Fixes
+
+* autodocs ([abd5d43](https://github.com/bcheidemann/web-utils/commit/abd5d43d2b9e28d1101fa83312515e9cebcce197))
+* oopsie ([67b2c87](https://github.com/bcheidemann/web-utils/commit/67b2c87c9edabb3733a4a18dc5f820ed8725ded3))
+* update docs on publish ([10c5dfb](https://github.com/bcheidemann/web-utils/commit/10c5dfb25f8d6a151a7c1e73c6821eb67067f1a2))
+
 ## [1.3.2](https://github.com/bcheidemann/web-utils/compare/v1.3.1...v1.3.2) (2021-05-22)
 
 
